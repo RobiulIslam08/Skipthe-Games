@@ -1,24 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
-		body {
-			font-family: 'Arimo', sans-serif;
-		}
-	</style>
-</head>
-<body>
-	<!--navbar  -->
-	<nav class="bg-[#5f5f5f] text-white px-4 lg:px-[85px] pt-2 pb-2 text-center text-[13px] flex lg:flex-row flex-col">
-	
-			<div>We use cookies to ensure that we give you the best experience on our website. By continuing to browse this site you permit us to place cookies on your browser and agree to our use of cookies. Review our cookies policy for details. <button class="mt-2 lg:mt-0 px-3 lg:py-[6px] py-2 w-full lg:w-auto block lg:inline rounded-sm bg-[#7daf3b] hover:bg-black transition-colors duration-300 ">ACCEPT COOKIES</button> <span class="mt-4 lg:mt-0 block lg:inline underline hover:no-underline">What are cookies?</span> </div> 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+      body {
+        font-family: "Arimo", sans-serif;
+      }
+      .custom-shadow-top {
+        box-shadow: 0px -4px 14px 0px rgba(27, 25, 25, 0.315);
+      }
+      .custom-shadow-bottom {
+        box-shadow: 0px 4px 14px 0px rgba(27, 25, 25, 0.315);
+      }
+    </style>
+  </head>
+  <body>
+    <!--first navbar   -->
 
-	</nav>
-</body>
+    <nav
+      class="bg-[#5f5f5f] text-white px-4 lg:px-[85px] pt-2 pb-2 text-center text-[13px] flex lg:flex-row flex-col"
+    >
+      <div>
+        We use cookies to ensure that we give you the best experience on our
+        website. By continuing to browse this site you permit us to place
+        cookies on your browser and agree to our use of cookies. Review our
+        cookies policy for details.
+        <button
+          class="mt-2 lg:mt-0 px-3 lg:py-[6px] py-2 w-full lg:w-auto block lg:inline rounded-sm bg-[#7daf3b] hover:bg-black transition-colors duration-300"
+        >
+          ACCEPT COOKIES
+        </button>
+        <span class="mt-4 lg:mt-0 block lg:inline underline hover:no-underline"
+          >What are cookies?</span
+        >
+      </div>
+    </nav>
+
+    <!-- second navbar -->
+    <div
+      class="pt-[10px] pb-8 flex flex-col items-center lg:px-[27px] xl:px-[197px] custom-shadow-bottom mx-auto lg:flex-row lg:justify-between"
+    >
+      <div class="lg:self-start mt-[3px] lg:mt-0">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <p
+        class="lg:self-end mt-[8px] lg:mt-[20px] text-[#777777] text-lg text-center font-medium px-[75px] lg:px-0"
+      >
+        Skip the
+        <span class="block lg:inline-block">games.Get satisfaction.</span>
+      </p>
+      <button
+        class="mt-2 lg:mt-2 bg-[#990033] text-white font-bold px-10 lg:px-[90px] py-[8px] rounded transition duration-300"
+      >
+        Post your free ad now
+      </button>
+    </div>
+
+    <!-- login heading -->
+    <div
+      class="lg:px-[27px] xl:px-[197px] py-[18px] lg:py-[22px] px-4 flex items-center gap-2 drop-shadow-sm text-[11px]"
+    >
+      <p>SKIPTHEGAMES.COM</p>
+      <span class="text-[#2ba6cb]">»</span>
+      <p class="text-[#2ba6cb]">LOGIN</p>
+    </div>
+
+    <!-- form  and footer-->
+
+    <div class="custom-shadow-top">
+      <!-- form -->
+      <div
+        class=" pt-[14px] lg:pt-[18px] py-[38px] px-4 lg:px-[27px] xl:px-[197px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-[150px]"
+      >
+        <div class="">
+          <h3 class="text-[22px] lg:text-[27px]">Log in to your account</h3>
+          <div class="mt-2">
+            <form action="#" class="space-y-5">
+              <input
+                name="email"
+                class="w-full text-sm px-[8px] py-[7px] outline-none border border-slate-300 focus:border-custom-rose/50 focus:bg-custom-gray3 shadow-inner transition duration-300"
+                placeholder="Your email"
+                type="email"
+                required=""
+                value="fdsf"
+              /><input
+                name="password"
+                class="w-full text-sm px-[8px] py-[7px] outline-none border border-slate-300 focus:border-custom-rose/50 focus:bg-custom-gray3 shadow-inner transition duration-300"
+                placeholder="Password"
+                type="password"
+                autocomplete="on"
+                required=""
+                value="fdsf"
+              /><button
+                type="submit"
+                class="w-full bg-[#2ba6cb] hover:bg-[#258cac] py-[14px] text-white transition duration-300 rounded"
+              >
+                Log in
+              </button>
+            </form>
+          </div>
+          <p class="mt-5 text-[9px] text-custom-gray2 font-semibold">
+            By clicking "Log in", you accept<span
+              class="text-custom-cyan hover:text-custom-cyan2 cursor-pointer text-[#2ba6cb]"
+            >
+              Skipthegames.com's Terms and Conditions of Use</span
+            >
+          </p>
+          <p class="text-sm text-custom-rose underline cursor-pointer">
+            Forgot your password?
+          </p>
+        </div>
+        <div class="lg:ml-[120px]">
+          <h3 class="text-[22px] lg:text-[27px] text-custom-gray2">
+            First time here?
+          </h3>
+          <p class="mt-[14px] text-custom-rose underline cursor-pointer">
+            Post your first ad
+          </p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="lg:pb-7 pb-[6px]" >
+        <div
+          class="py-[20px] flex lg:justify-between text-custom-gray  lg:px-[27px] px-4 xl:px-[197px]"
+        >
+          <div class="">
+            <p class="cursor-pointer text-[#777777] hover:text-[#383434]">
+              ©skipthegames.com
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 lg:gap-[22px]">
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#777777] hover:text-[#383434]">Home</p>
+            </div>
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Contact</p>
+            </div>
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">About</p>
+            </div>
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Privacy</p>
+            </div>
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Terms</p>
+            </div>
+            <div class="first:text-custom-gray text-custom-cyan">
+              <p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Escort Info</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+  </body>
 </html>

